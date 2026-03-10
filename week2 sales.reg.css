@@ -1,0 +1,82 @@
+body {
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  /* background:#5f5b5b; */
+  padding: 20px;
+  border: 2px solid black;
+}
+.sidebar div {
+  background-color: lightslategray;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  /* background:#646161; */
+  border: 2px solid black;
+}
+
+.input-container {
+  display: flex;
+  /* border:3px solid black; */
+  padding: 10px;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.input-section {
+  display: flex;
+  flex-direction: row;
+  /* border:2px solid black; */
+  padding: 10px;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+   margin: 10px;
+}
+
+.input-section label {
+  margin-bottom: 5px;
+}
+
+.input-section input,
+.input-section select {
+  padding: 10px;
+  width: 300px;
+}
+
+.input-section-horizontal {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button.left {
+  margin-right: auto;
+}
+
+button.right {
+  margin-left: auto;
+}

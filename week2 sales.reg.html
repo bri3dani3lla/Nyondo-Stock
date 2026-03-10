@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="week2 sales.reg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <a href="week2 sales.reg.html">Sales Registration</a>
+        </div>
+        <div>
+          <a href="supplierRegistration.html">Supplier Registration</a>
+        </div>
+        <div>
+          <a href="stockMgt.html">Stock Management</a>
+        </div>
+        <div>
+          <a href="trans.Mgt.html">Transport Management</a>
+        </div>
+      </aside>
+
+      <form action="">
+        <div class="content">
+          <h2>Sales Registration</h2>
+          <div class="input-container">
+            <label for="salesdate">Sales Date</label>
+            <input type="date" id="salesdate" />
+
+            <label for="salesperson">Sales Person</label>
+            <select>
+              <option value="">select</option>
+              <option value="1">Jace Norman</option>
+              <option value="2">Rose Wright</option>
+              <option value="3">Mimi Janice</option>
+              <option value="4">Edith Jules</option>
+            </select>
+          </div>
+
+          <h2>Customer Details</h2>
+          <!-- Section 2 -->
+          <div class="input-container">
+            <div class="input-section">
+              <label for="fullname">Name</label>
+              <input type="text" id="fullname" name="person" />
+
+              <label for="phonenumber">Phone Number</label>
+              <input type="tel" id="phonenumber" />
+            </div>
+
+            <div class="input-section">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
+
+              <label for="customertype">Customer Type</label>
+              <select name="customertype" id="customertype">
+                <option value="" disabled selected>select customer type</option>
+                <option value="1">Wholesaler</option>
+                <option value="2">Retailer</option>
+                <option value="3">Broker</option>
+              </select>
+            </div>
+          </div>
+          <h2>Items</h2>
+          <div class="input-container">
+            <div class="input-section-horizontal">
+              <label for="pdtidentity">Pdt Id</label>
+              <input type="text" placeholder="Pdt Id" />
+              <label for="quantity">Quantity</label>
+              <input type="number" placeholder="Quantity" />
+              <label for="unitprice">Unit Price</label>
+              <input type="number" placeholder="Unit Price" />
+            </div>
+          </div>
+
+          <div class="input-section-horizontal">
+            <label for="pdtidentity">Pdt Id</label>
+            <input type="text" placeholder="Pdt Id" />
+            <label for="quantity">Quantity</label>
+            <input type="number" placeholder="Quantity" />
+            <label for="unitprice">Unit Price</label>
+            <input type="number" placeholder="Unit Price" />
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="left">Cancel</button>
+            <button type="submit" class="right">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
