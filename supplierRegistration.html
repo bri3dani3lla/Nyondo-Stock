@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supplier Registration</title>
+    <link rel="stylesheet" href="supplierReg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div><a href="dashboard.html">Dashboard</a></div>
+        <div><a href="week2 sales.reg.html">Sales Registration</a></div>
+        <div><a href="supplierRegistration.html">Supplier Registration</a></div>
+        <div><a href="stockMgt.html">Stock Management</a></div>
+        <div><a href="trans.Mgt.html">Transport Management</a></div>
+      </aside>
+
+      <form action="">
+        <div class="content">
+          <h2>Supplier Registration</h2>
+
+          <!-- SUPPLIER INFORMATION -->
+          <h3>Supplier Information</h3>
+
+          <div class="input-container">
+            <div class="input-section">
+              <label for="suppliername">Supplier Name</label>
+              <input type="text" id="suppliername" name="suppliername" />
+
+              <label for="regno">Registration No.</label>
+              <input type="text" id="regno" name="regno" />
+            </div>
+
+            <div class="input-section">
+              <label for="regdate">Date of Registration</label>
+              <input type="date" id="regdate" name="regdate" />
+
+              <label for="businesstype">Business Type</label>
+              <select id="businesstype" name="businesstype">
+                <option value="">Select</option>
+                <option value="1">Individual</option>
+                <option value="2">Company</option>
+                <option value="3">Partnership</option>
+                <option value="4">NGO</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- CONTACT DETAILS -->
+          <h3>Contact Details</h3>
+
+          <div class="input-container">
+            <div class="input-section">
+              <label for="contactperson">Contact Person</label>
+              <input type="text" id="contactperson" name="contactperson" />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="input-section">
+              <label for="designation">Designation / Role</label>
+              <select id="designation" name="designation">
+                <option value="">Select</option>
+                <option value="1">Director</option>
+                <option value="2">Manager</option>
+                <option value="3">Procurement Officer</option>
+                <option value="4">Sales Representative</option>
+                <option value="5">Owner</option>
+              </select>
+
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <!-- ADDRESS INFORMATION -->
+          <h3>Address Information</h3>
+
+          <div class="input-container">
+            <div class="input-section">
+              <label for="address">Address</label>
+
+              <!-- CORRECTION: added rows -->
+              <textarea id="address" name="address" rows="3"></textarea>
+
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" />
+            </div>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="buttons">
+            <button type="button">Cancel</button>
+
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

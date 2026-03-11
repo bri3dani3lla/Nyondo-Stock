@@ -16,7 +16,7 @@ body {
   border: 2px solid black;
 }
 .sidebar div {
-  background-color: lightslategray;
+  background-color: rgb(212, 216, 221);
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
@@ -40,16 +40,12 @@ body {
   flex-direction: row;
   border-radius: 10px;
 }
-.input-section {
-  display: flex;
-  flex-direction: row;
-  /* border:2px solid black; */
-  padding: 10px;
-}
+
 .input-section {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+   margin: 10px;
+    gap: 20px;
 }
 
 .input-section label {
@@ -67,16 +63,35 @@ body {
   flex-direction: row;
   margin: 10px;
 }
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* Button Area */
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
 }
 
-button.left {
-  margin-right: auto;
+/* Button Style */
+
+button{
+    padding:12px 40px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
 }
 
-button.right {
-  margin-left: auto;
+/* Cancel */
+
+button[type="button"]{
+    background:white;
+    border:2px solid #3b5fbf;
+    color:#3b5fbf;
+}
+
+/* Submit */
+
+button[type="submit"]{
+    background:#3b5fbf;
+    color:white;
 }
