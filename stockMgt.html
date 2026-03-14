@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Registration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <style>
+    body {
+        background-color: blanchedalmond;
+         overflow-x: hidden;
+    }
+    .sidebar { 
+      height: 20vh;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      background-color: rgb(235, 237, 238);
+      width: 220px;  
+      overflow-y: auto;
+    }
+    .content {
+  border: 2px double black;
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 240px;
+  margin-top: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+    .form-control { 
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    button {
+        margin-top: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+     } 
+
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stockMgt.html">Stock Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="supplierRegistration.html"
+                >Suppliers Registration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week2 sales.reg.html"
+                >Sales Registration</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="stockMgt.html">Stock Registration Form</a></li>
+      <li class="nav-item"><a class="nav-link" href="supplierRegistration.html">Supplier Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="week2 sales.reg.html">Sales Registration</a></li>
+    </ul>
+  </div>
+
+
+    <!-- Main Section -->
+
+    <div class="content">
+    <form action="">
+      <h1 class="text-center">Stock Registration Form</h1>
+
+      <h3 class="text-center">Product Information</h3>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Product Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Hammer, Nails, Screws, Cement, Paint"
+          />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Product ID</label>
+          <input type="text" class="form-control" placeholder="12345" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Category</label>
+          <select class="form-select">
+            <option>Tools</option>
+            <option>Building Materials</option>
+            <option>Paint</option>
+            <option>Electrical</option>
+            <option>Plumbing</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label class="form-label">Supplier Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="ABC Hardware Supplies"
+          />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Supplier Contact</label>
+          <input type="text" class="form-control" placeholder="0712XXXXXX" />
+        </div>
+      </div>
+
+      <h3 class="text-center">Stock Details</h3>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Quantity</label>
+          <input type="number" class="form-control" />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Unit Price</label>
+          <input type="number" class="form-control" />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Total Value</label>
+          <input type="number" class="form-control" disabled />
+        </div>
+      </div>
+
+      <h3 class="text-center">Storage Information</h3>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Date Added</label>
+          <input type="date" class="form-control" />
+        </div>
+        <div class="col">
+          <label class="form-label">Expiry Date (if applicable)</label>
+          <input type="date" class="form-control" />
+        </div>
+      </div>
+
+      <h3 class="text-center">Additional Information</h3>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label">Description</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+        </div>
+
+        <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Upload Product Image</label>
+          <input type="file" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-success">Register Stock</button>
+        </div>
+        <div class="col text-end">
+          <button type="reset" class="btn btn-secondary">Clear Form</button>
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
