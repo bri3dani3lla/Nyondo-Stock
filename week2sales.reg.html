@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="week2 sales.reg.css" />
+    <title>Sales Regitration</title>
+    <link rel="stylesheet" href="week2sales.reg.css" />
   </head>
   <body>
     <div class="container">
@@ -13,7 +13,7 @@
           <a href="dashboard.html">Dashboard</a>
         </div>
         <div>
-          <a href="week2 sales.reg.html">Sales Registration</a>
+          <a href="week2sales.reg.html">Sales Registration</a>
         </div>
         <div>
           <a href="supplierRegistration.html">Supplier Registration</a>
@@ -30,17 +30,21 @@
         <div class="content">
           <h2>Sales Registration</h2>
           <div class="input-container">
-            <label for="salesdate">Sales Date</label>
-            <input type="date" id="salesdate" />
+            <div class="field">
+              <label for="salesdate">Sales Date</label>
+              <input type="date" id="salesdate" />
+            </div>
 
-            <label for="salesperson">Sales Person</label>
-            <select>
-              <option value="">select</option>
-              <option value="1">Jace Norman</option>
-              <option value="2">Rose Wright</option>
-              <option value="3">Mimi Janice</option>
-              <option value="4">Edith Jules</option>
-            </select>
+            <div class="field">
+              <label for="salesperson">Sales Person</label>
+              <select>
+                <option value="">select</option>
+                <option value="1">Jace Norman</option>
+                <option value="2">Rose Wright</option>
+                <option value="3">Mimi Janice</option>
+                <option value="4">Edith Jules</option>
+              </select>
+            </div>
           </div>
 
           <h2>Customer Details</h2>
@@ -70,22 +74,34 @@
           <h2>Items</h2>
           <div class="input-container">
             <div class="input-section-horizontal">
-              <label for="pdtidentity">Pdt Id</label>
-              <input type="text" placeholder="Pdt Id" />
-              <label for="quantity">Quantity</label>
-              <input type="number" placeholder="Quantity" />
-              <label for="unitprice">Unit Price</label>
-              <input type="number" placeholder="Unit Price" />
+              <div class="field">
+                <label for="pdtidentity">Pdt Id</label>
+                <input type="text" placeholder="Pdt Id" />
+              </div>
+              <div class="field">
+                <label for="quantity">Quantity</label>
+                <input type="number" placeholder="Quantity" />
+              </div>
+              <div class="field">
+                <label for="unitprice">Unit Price</label>
+                <input type="number" placeholder="Unit Price" />
+              </div>
             </div>
           </div>
 
           <div class="input-section-horizontal">
-            <label for="pdtidentity">Pdt Id</label>
-            <input type="text" placeholder="Pdt Id" />
-            <label for="quantity">Quantity</label>
-            <input type="number" placeholder="Quantity" />
-            <label for="unitprice">Unit Price</label>
-            <input type="number" placeholder="Unit Price" />
+            <div class="field">
+              <label for="pdtidentity">Pdt Id</label>
+              <input type="text" placeholder="Pdt Id" />
+            </div>
+            <div class="field">
+              <label for="quantity">Quantity</label>
+              <input type="number" placeholder="Quantity" />
+            </div>
+            <div class="field">
+              <label for="unitprice">Unit Price</label>
+              <input type="number" placeholder="Unit Price" />
+            </div>
           </div>
 
           <div class="buttons">

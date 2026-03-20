@@ -38,10 +38,30 @@ body {
 
 .input-container {
   display: flex;
-  /* border:3px solid black; */
+  font-weight: bold;
   padding: 10px;
+  gap: 20px;
   flex-direction: row;
   border-radius: 10px;
+}
+
+.input-container .field {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;               
+}
+
+.input-container .field input,
+.input-container .field select {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-container .field label {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .input-section {
@@ -65,10 +85,30 @@ body {
 .input-section-horizontal {
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
-  margin: 10px;
+  /* border-radius: 10px; */
+  /* padding: 15px; */
+  margin-bottom: 20px;
   gap: 20px;
 }
+
+.input-section-horizontal .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.input-section-horizontal .field input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.input-section-horizontal .field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -77,8 +117,20 @@ body {
 
 button.left {
   margin-right: auto;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button.right {
   margin-left: auto;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
